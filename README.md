@@ -1,2 +1,1 @@
-# Journey_of_An_Egg
- A mini game for Playdate
+A mini game for playdate made in Lua
