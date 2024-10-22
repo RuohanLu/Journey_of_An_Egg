@@ -10,6 +10,12 @@ import "screenShake"
 local pd <const> = playdate
 local gfx <const> = pd.graphics
 
+--[[
+white and black balls, white can only touch white, blk can only touch blk
+movable obstacles, rotatable obstacles
+some obstacles have some functions
+]]--
+
 --Initialize play UI
 local playerSprite = nil
 local playerSprite2 = nil
@@ -20,8 +26,8 @@ local function initialize()
     playerSprite2 = gfx.sprite.new(playerImage)
     playerSprite:moveTo(100, 24)
     playerSprite2:moveTo(100, 156)
-    playerSprite:setCollideRect(2, 2, 20, 20)
-    playerSprite2:setCollideRect(2, 2, 20, 20)
+    playerSprite:setCollideRect(3, 3, 18, 18)
+    playerSprite2:setCollideRect(3, 3, 18, 18)
     --playerSprite:collisionResponse("overlap")
     --playerSprite2:collisionResponse("overlap")
     playerSprite:add()
